@@ -43,11 +43,11 @@ const LoginForm = () => {
             <Box sx={{textTransform:'capitalize'}}>
                 <Container sx={{py:'2rem', display:'flex',flexDirection:'column', flexWrap: 'wrap'}}>
                     <FormControl sx={{ flexBasis: '80%', my:'1rem'}}>
-                        <InputLabel htmlFor='userName'>Username:</InputLabel>
-                            <OutlinedInput
+                    <InputLabel htmlFor='username'>User Name:</InputLabel>
+                        <OutlinedInput
                             type="text"
-                            id="userName"
-                            label="userName"
+                            name="username"
+                            label="username"
                             value={formData.username}
                             onChange={handleChange}
                             required="true"
@@ -58,7 +58,7 @@ const LoginForm = () => {
                         <OutlinedInput
                             type="password"
                             name="password"
-                            label='password'
+                            label="password"
                             value={formData.password}
                             onChange={handleChange}
                             required="true"

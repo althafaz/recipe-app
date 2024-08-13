@@ -45,15 +45,15 @@ const RegistrationForm = () => {
         <Box sx={{textTransform:'capitalize'}}>
         <Container sx={{py:'2rem', display:'flex',flexDirection:'column', flexWrap: 'wrap'}}>
             <FormControl sx={{ flexBasis: '80%', my:'1rem'}}>
-                <InputLabel htmlFor='userName'>Username:</InputLabel>
-                    <OutlinedInput
-                    type="text"
-                    id="userName"
-                    label="userName"
-                    value={formData.username}
-                    onChange={handleChange}
-                    required="true"
-                />
+            <InputLabel htmlFor='username'>User Name:</InputLabel>
+                        <OutlinedInput
+                            type="text"
+                            name="username"
+                            label="username"
+                            value={formData.username}
+                            onChange={handleChange}
+                            required="true"
+                        />
             </FormControl>
             <FormControl sx={{ flexBasis: '80%', my:'1rem'}}>
                 <InputLabel htmlFor='password'>Password:</InputLabel>

@@ -25,7 +25,7 @@ public class RecipeApiApplication {
 		return new WebMvcConfigurer() {
 			@Override
 			public void addCorsMappings(CorsRegistry reg) {
-				reg.addMapping("/**").allowedOrigins("*");
+				reg.addMapping("/**").allowedOrigins("http://localhost:5173");
 			}
 		};
 	}
