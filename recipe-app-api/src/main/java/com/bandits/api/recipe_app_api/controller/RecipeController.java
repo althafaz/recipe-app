@@ -9,6 +9,7 @@ import com.bandits.api.recipe_app_api.service.RecipeService;
 
 @RestController
 @RequestMapping("/")
+@CrossOrigin("*")
 public class RecipeController {
     private static final Logger log = LoggerFactory.getLogger(RecipeController.class);
     @Autowired
